@@ -1,0 +1,16 @@
+[Unit]
+Description=jambonz warm transfer worker
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/jambonz-warm-transfer
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=2
+Environment=NODE_ENV=production
+# The worker listens on loopback; jambonz reaches it from the same host.
+Environment=PORT=3021
+
+[Install]
+WantedBy=multi-user.target

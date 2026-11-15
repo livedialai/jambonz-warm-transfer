@@ -1,0 +1,11 @@
+node_modules/
+config.json
+.env
+*.log
+*.pcap
+*.bak-*
+
+# Audio assets belong to you, not to the repo (licensing + size).
+# Put your own hold.wav / opener.wav next to server.js.
+hold.wav
+opener.wav

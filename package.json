@@ -1,0 +1,13 @@
+{
+  "name": "jambonz-warm-transfer",
+  "version": "1.0.0",
+  "description": "Warm transfer for jambonz with a spoken yes/no decision by the human — single-verb implementation plus the mediajam hold-music notes.",
+  "main": "server.js",
+  "license": "MIT",
+  "private": false,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js"
+  }
+}

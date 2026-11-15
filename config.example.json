@@ -1,0 +1,50 @@
+{
+  "port": 3021,
+  "host": "127.0.0.1",
+  "public_base_url": "http://127.0.0.1:3021",
+
+  "hold_music_url": "https://your-host.example/hold.wav",
+
+  "transfer": {
+    "number": "+15551234567",
+    "sip_host": "sip.your-carrier.example:5060",
+    "sip_user": "your-sip-user",
+    "sip_pass": "your-sip-password",
+    "caller_id": "+15557654321",
+    "timeout": 35
+  },
+
+  "feature_server": {
+    "url": "http://127.0.0.1:3000",
+    "key": "your-jambonz-api-key"
+  },
+
+  "voice": {
+    "tts_vendor": "inworld",
+    "tts_label": "Inworld",
+    "tts_voice": "your-voice",
+    "language": "en-US",
+    "stt_vendor": "deepgram",
+    "stt_label": "Deepgram",
+    "stt_language": "en",
+    "stt_timeout": 20
+  },
+
+  "llm": {
+    "base": "https://api.your-provider.example/v1",
+    "key": "your-llm-key",
+    "model": "your-model",
+    "reasoning": "none"
+  },
+
+  "agent": {
+    "prompt": "You are the phone agent of Example Ltd, a hardware store. Answer questions about opening hours, availability and delivery. Keep answers to one or two short sentences."
+  },
+
+  "phrases": {
+    "opener": "Hello! You are through to the service desk. How can I help you?",
+    "hold": "One moment please, I am connecting you.",
+    "back": "No one is available right now. Let me help you myself — what can I do for you?",
+    "approve_question": "A caller is on the line: {brief}. Do you want to take the call?"
+  }
+}
